@@ -152,8 +152,6 @@ KIMI_API_KEY=your_api_key
 KIMI_BASE_URL=https://modelservice.jdcloud.com/coding/openai/v1
 ```
 
-`.env` 包含密钥和本地配置，已经加入 `.gitignore`，不要提交到 GitHub。
-
 前端默认请求 `http://127.0.0.1:8001`。如果后端端口不同，可以设置：
 
 ```powershell
@@ -310,19 +308,6 @@ standard
 advanced
 extended
 ```
-
-## GitHub 提交建议
-
-提交前建议检查：
-
-```powershell
-git status --short
-git check-ignore -v .env course_agent.db frontend/node_modules frontend/dist storage uploads
-```
-
-建议提交源码、提示词、文档、依赖清单和 `.env.example`；不要提交 `.env`、数据库、上传文件、解析结果、构建产物、依赖目录和个人测试 PDF。
-
-如需保留演示课件，建议只放体积较小且版权明确的文件，并在 README 中说明来源。
 
 ## 当前限制
 
